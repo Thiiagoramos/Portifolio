@@ -24,7 +24,7 @@ async function handleSubmit(btn) {
   btn.disabled     = true;
 
   try {
-    const response = await fetch('https://formspree.io/f/mojyzvgbl', {
+    const response = await fetch('https://formspree.io/f/mojyzvgb', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ nome, email, mensagem })

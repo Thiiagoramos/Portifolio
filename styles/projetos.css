@@ -1,0 +1,230 @@
+/* =========================================
+   PROJETOS.CSS — atualizado com GitHub API
+   ========================================= */
+
+.projetos-subtitle {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+}
+
+.projetos-subtitle a {
+  color: var(--cyan);
+  transition: opacity 0.2s;
+}
+
+.projetos-subtitle a:hover {
+  opacity: 0.8;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Card de projeto ── */
+.project-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card.featured {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 1px var(--cyan-dim);
+}
+
+/* ── Traffic lights ── */
+.traffic-lights {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.tl {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.tl-red    { background: var(--red); }
+.tl-yellow { background: var(--yellow); }
+.tl-green  { background: var(--green); }
+
+.project-path {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+/* ── Conteúdo ── */
+.project-name {
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.project-name a {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.project-name a:hover {
+  color: var(--cyan);
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* ── Tags ── */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 3px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  color: var(--cyan);
+}
+
+/* ── Meta (stars, forks, data) ── */
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.project-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.project-meta svg {
+  color: var(--text-muted);
+}
+
+.project-updated {
+  margin-left: auto;
+  font-size: 0.68rem;
+}
+
+/* ── Links ── */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 4px;
+}
+
+.project-links a {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: var(--cyan);
+}
+
+/* ── Empty state ── */
+.projects-empty {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  grid-column: 1 / -1;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ── Error state ── */
+.projects-error {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--red);
+}
+
+/* =========================================
+   SKELETON LOADER
+   ========================================= */
+
+.project-card.skeleton {
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+
+.sk-line,
+.sk-tag {
+  background: linear-gradient(
+    90deg,
+    var(--bg3) 25%,
+    var(--border2) 50%,
+    var(--bg3) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 4px;
+  height: 12px;
+  margin-bottom: 8px;
+}
+
+.sk-short  { width: 40%; }
+.sk-title  { width: 65%; height: 18px; }
+.sk-medium { width: 80%; }
+.sk-line   { width: 100%; }
+
+.sk-tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.sk-tag {
+  width: 60px;
+  height: 22px;
+  margin-bottom: 0;
+  border-radius: 3px;
+}

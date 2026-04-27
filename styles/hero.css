@@ -1,0 +1,99 @@
+/* =========================================
+   HERO.CSS
+   ========================================= */
+
+#hero {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0 5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-greeting {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 0.5rem;
+}
+
+.hero-greeting span {
+  color: var(--cyan);
+}
+
+.hero-name {
+  font-family: var(--mono);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-role {
+  font-family: var(--mono);
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--cyan);
+  margin-bottom: 1.5rem;
+  min-height: 2rem;
+}
+
+.typing-text {
+  border-right: 2px solid var(--cyan);
+  padding-right: 4px;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--text-dim);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.hero-desc strong {
+  color: var(--cyan);
+  font-weight: 500;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ── Estatísticas ── */
+.hero-stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.hero-stat .num {
+  font-family: var(--mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-stat .num span {
+  color: var(--cyan);
+}
+
+.hero-stat .label {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-family: var(--mono);
+  margin-top: 2px;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 600px) {
+  .hero-stats {
+    gap: 1.5rem;
+  }
+}

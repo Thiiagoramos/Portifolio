@@ -1,0 +1,119 @@
+/* =========================================
+   MAIN.CSS — Layout base e componentes
+   ========================================= */
+
+main {
+  /* empurra o conteúdo para baixo da navbar fixa (60px) */
+  margin-top: 60px;
+  padding: 0 clamp(1.5rem, 5vw, 5rem);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* ── Títulos de seção ── */
+.section-title {
+  font-family: var(--mono);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.section-title .bracket {
+  opacity: 0.4;
+}
+
+/* ── Card base ── */
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--border2);
+}
+
+.card-title {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--cyan);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.card-title::before {
+  content: '// ';
+  opacity: 0.6;
+}
+
+/* ── Botões ── */
+.btn {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  padding: 10px 24px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--cyan);
+  color: #0d0f14;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #00f0d3;
+  box-shadow: 0 0 20px var(--cyan-dim);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--border2);
+}
+
+.btn-ghost:hover {
+  border-color: var(--cyan);
+  background: var(--cyan-glow);
+}
+
+.btn-full {
+  width: 100%;
+  text-align: center;
+}
+
+/* ── Animações de entrada ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
+}

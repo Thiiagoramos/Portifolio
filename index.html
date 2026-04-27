@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago Ramos — Dados & Engenharia</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/vars.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/sobre.css">
+  <link rel="stylesheet" href="styles/tecnologias.css">
+  <link rel="stylesheet" href="styles/projetos.css">
+  <link rel="stylesheet" href="styles/contato.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+
+  <!-- NAVBAR TOPO -->
+  <header id="navbar">
+    <div class="navbar-inner">
+
+      <div class="navbar-brand">
+        <span class="brand-name">thiago_ramos<span class="cursor"></span></span>
+        <span class="brand-role">// Engenheiro de Computação</span>
+      </div>
+
+      <nav class="navbar-nav" id="navbar-nav">
+        <a href="#hero"        class="nav-link"><span class="prompt">~</span> Início</a>
+        <a href="#sobre"       class="nav-link"><span class="prompt">~</span> Sobre</a>
+        <a href="#tecnologias" class="nav-link"><span class="prompt">~</span> Tecnologias</a>
+        <a href="#projetos"    class="nav-link"><span class="prompt">~</span> Projetos</a>
+        <a href="#contato"     class="nav-link"><span class="prompt">~</span> Contato</a>
+      </nav>
+
+      <button class="navbar-toggle" id="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <!-- <div class="hero-greeting"><span>$</span> whoami</div> -->
+      <h1 class="hero-name">Thiago Ramos</h1>
+      <div class="hero-role">
+        <span class="typing-text" id="typing-text">Analista de Dados</span>
+      </div>
+      <p class="hero-desc">
+        Estudante de Engenharia de Computação com apaixonado por <strong>dados</strong> — análise exploratória, visualização e pipelines. Transformo conjuntos de dados em insights que geram decisões melhores.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+        <a href="#contato"  class="btn btn-ghost">Entrar em contato</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">5<span>+</span></div>
+          <div class="label">// Ferramentas de dados</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">3<span>+</span></div>
+          <div class="label">// Projetos de Análise</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">2<span>+</span></div>
+          <div class="label">// Anos estudando</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <h2 class="section-title">
+        <span class="bracket">&lt;</span>Sobre mim<span class="bracket">/&gt;</span>
+      </h2>
+
+      <div class="sobre-grid fade-in">
+        <div class="card">
+          <div class="card-title">Quem sou eu</div>
+          <p>
+            Sou estudante de <strong>Engenharia de Computação</strong> apaixonado por transformar dados em conhecimento. Meu foco está em análise exploratória, visualização de dados e criação de dashboards que comunicam insights com clareza.
+          </p>
+          <br>
+          <p>
+            Tenho experiência com Python para análise e automação, SQL para manipulação de dados e Power BI para visualização. Complemento isso com habilidades em desenvolvimento web, o que me permite entregar soluções completas — da coleta ao resultado final.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Status</div>
+          <ul class="status-list">
+            <li><span class="dot-green"></span> Disponível para oportunidades</li>
+            <li>📍 Araxá, Brasil</li>
+            <li>🎓 Cursando Eng. Computação</li>
+            <li>📊 Foco em análise de dados</li>
+            <li>📈 Power BI & Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sobre-grid-bottom fade-in">
+        <div class="card">
+          <div class="card-title">Habilidades</div>
+
+          <div class="skills-category-label">// Dados & Análise</div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header"><span>Python</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>SQL</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Power BI</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Pandas / NumPy</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+
+          <div class="skills-category-label skills-category-label--secondary">// Desenvolvimento</div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header"><span>HTML / CSS</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill skill-fill--dim" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>JavaScript</span><span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill skill-fill--dim" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Ferramentas</div>
+          <div class="tools-grid">
+            <div class="tool-item tool-item--highlight"><i class="devicon-jupyter-plain"></i> Jupyter</div>
+            <div class="tool-item tool-item--highlight"><i class="devicon-postgresql-plain"></i> PostgreSQL</div>
+            <div class="tool-item tool-item--highlight"><i class="devicon-pandas-plain"></i> Pandas</div>
+            <div class="tool-item tool-item--highlight"><i class="devicon-python-plain"></i> Matplotlib</div>
+            <div class="tool-item"><i class="devicon-vscode-plain"></i> VS Code</div>
+            <div class="tool-item"><i class="devicon-git-plain"></i> Git/GitHub</div>
+            <div class="tool-item"><i class="devicon-linux-plain"></i> Linux</div>
+            <div class="tool-item"><i class="devicon-figma-plain"></i> Figma</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section id="tecnologias">
+      <h2 class="section-title">
+        <span class="bracket">&lt;</span>Tecnologias<span class="bracket">/&gt;</span>
+      </h2>
+
+      <div class="tech-group-label">// Dados & Visualização</div>
+      <div class="tech-grid tech-grid--primary fade-in">
+        <div class="tech-card tech-card--featured">
+          <i class="devicon-python-plain" style="color:#4b8bbe"></i>
+          <div class="tech-name">Python</div>
+          <div class="tech-desc">Análise, automação e APIs</div>
+        </div>
+        <div class="tech-card tech-card--featured">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI">
+          <div class="tech-name">Power BI</div>
+          <div class="tech-desc">Dashboards e medidas DAX</div>
+        </div>
+        <div class="tech-card tech-card--featured">
+          <i class="devicon-postgresql-plain" style="color:#336791"></i>
+          <div class="tech-name">SQL</div>
+          <div class="tech-desc">Consultas e modelagem</div>
+        </div>
+        <div class="tech-card tech-card--featured">
+          <i class="devicon-pandas-plain" style="color:#150458"></i>
+          <div class="tech-name">Pandas</div>
+          <div class="tech-desc">Manipulação de dados</div>
+        </div>
+        <div class="tech-card tech-card--featured">
+          <i class="devicon-jupyter-plain" style="color:#f37726"></i>
+          <div class="tech-name">Jupyter</div>
+          <div class="tech-desc">Análise exploratória</div>
+        </div>
+      </div>
+
+      <div class="tech-group-label tech-group-label--secondary">// Desenvolvimento </div>
+      <div class="tech-grid tech-grid--secondary fade-in">
+        <div class="tech-card tech-card--dim">
+          <i class="devicon-html5-plain" style="color:#e34f26"></i>
+          <div class="tech-name">HTML 5</div>
+          <div class="tech-desc">Estrutura web</div>
+        </div>
+        <div class="tech-card tech-card--dim">
+          <i class="devicon-css3-plain" style="color:#264de4"></i>
+          <div class="tech-name">CSS 3</div>
+          <div class="tech-desc">Estilização</div>
+        </div>
+        <div class="tech-card tech-card--dim">
+          <i class="devicon-javascript-plain" style="color:#f7df1e"></i>
+          <div class="tech-name">JavaScript</div>
+          <div class="tech-desc">Em aprendizado</div>
+        </div>
+        <div class="tech-card tech-card--dim">
+          <i class="devicon-git-plain" style="color:#f05033"></i>
+          <div class="tech-name">Git</div>
+          <div class="tech-desc">Controle de versão</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+      <h2 class="section-title">
+        <span class="bracket">&lt;</span>Projetos<span class="bracket">/&gt;</span>
+      </h2>
+      <p class="projetos-subtitle">
+        // Repositórios públicos de
+        <a href="https://github.com/Thiiagoramos" target="_blank" rel="noopener"
+           id="github-profile-link">@Thiiagoramos</a>
+        — atualizados automaticamente
+      </p>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Injetado por js/github.js -->
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <h2 class="section-title">
+        <span class="bracket">&lt;</span>Contato<span class="bracket">/&gt;</span>
+      </h2>
+
+      <div class="contato-wrapper fade-in">
+        <div class="contato-info">
+          <p>Disponível para trabalhos e projetos na área de dados. Se quiser conversar sobre análise, visualização ou tiver uma ideia para colocar em prática, fique à vontade.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/thiago-ramos-a86107279/" class="social-link">
+              <i class="devicon-linkedin-plain"></i> /in/thiago-ramos
+            </a>
+            <a href="https://github.com/Thiiagoramos" class="social-link">
+              <i class="devicon-github-original"></i> github.com/thiago-ramos
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Enviar mensagem</div>
+          <div class="form-group">
+            <label><span class="keyword">Nome</span></label>
+            <input type="text" name="nome" placeholder='"Seu nome"'>
+          </div>
+          <div class="form-group">
+            <label><span class="keyword">Email</span></label>
+            <input type="email" name="email" placeholder='"seu@email.com"'>
+          </div>
+          <div class="form-group">
+            <label><span class="keyword">Mensagem</span></label>
+            <textarea name="mensagem" placeholder='"Olá, Thiago..."'></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" id="submit-btn" onclick="handleSubmit(this)">
+            Enviar mensagem
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>// <span>Thiago Ramos</span> — Todos os direitos reservados &copy; <span id="ano"></span> </p>
+      <p class="footer-stack">Construído com <span>HTML</span>, <span>CSS</span> & <span>JS</span></p>
+    </footer>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/github.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

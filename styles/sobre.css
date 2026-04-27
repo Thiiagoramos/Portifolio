@@ -1,0 +1,163 @@
+/* =========================================
+   SOBRE.CSS
+   ========================================= */
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.sobre-grid-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sobre-grid .card p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.75;
+}
+
+.sobre-grid .card strong {
+  color: var(--text);
+}
+
+/* ── Status ── */
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.status-list li {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--text);
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.status-list li:last-child {
+  border-bottom: none;
+}
+
+.dot-green {
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--green);
+  flex-shrink: 0;
+}
+
+/* ── Labels de categoria de habilidade ── */
+.skills-category-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--cyan);
+  margin-bottom: 10px;
+  margin-top: 4px;
+  letter-spacing: 0.03em;
+}
+
+.skills-category-label--secondary {
+  color: var(--text-muted);
+  margin-top: 1.25rem;
+}
+
+/* ── Barras de habilidade ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 2rem;
+  margin-bottom: 4px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.skill-header span:last-child {
+  color: var(--text-dim);
+}
+
+.skill-bar {
+  height: 3px;
+  background: var(--bg3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* Barra principal — dados */
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cyan), #00f0d3);
+  border-radius: 2px;
+  width: 0;
+  transition: width 1s ease;
+}
+
+/* Barra secundária — desenvolvimento */
+.skill-fill--dim {
+  background: linear-gradient(90deg, var(--text-muted), var(--text-dim));
+  opacity: 0.6;
+}
+
+/* ── Ferramentas ── */
+.tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  padding: 6px 8px;
+  background: var(--bg3);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s;
+}
+
+.tool-item i {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Destaque para ferramentas de dados */
+.tool-item--highlight {
+  border-color: var(--border2);
+  color: var(--text);
+}
+
+.tool-item--highlight i {
+  color: var(--cyan);
+}
+
+/* ── Responsivo ── */
+@media (max-width: 900px) {
+  .sobre-grid,
+  .sobre-grid-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

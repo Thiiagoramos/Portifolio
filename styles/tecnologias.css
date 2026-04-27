@@ -1,0 +1,119 @@
+/* =========================================
+   TECNOLOGIAS.CSS — com grupos por categoria
+   ========================================= */
+
+/* ── Label de grupo ── */
+.tech-group-label {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--cyan);
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.tech-group-label--secondary {
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+}
+
+/* ── Grid principal (dados) ── */
+.tech-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.tech-grid--primary {
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
+.tech-grid--secondary {
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+/* ── Card base ── */
+.tech-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: default;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.tech-card:hover {
+  transform: translateY(-3px);
+}
+
+.tech-card:hover::before {
+  opacity: 1;
+}
+
+/* Card em destaque — dados */
+.tech-card--featured {
+  border-color: var(--border2);
+}
+
+.tech-card--featured::before {
+  background: var(--cyan-glow);
+}
+
+.tech-card--featured:hover {
+  border-color: var(--cyan);
+  box-shadow: 0 4px 20px rgba(0, 217, 192, 0.08);
+}
+
+/* Card secundário — desenvolvimento */
+.tech-card--dim {
+  opacity: 0.55;
+}
+
+.tech-card--dim::before {
+  background: rgba(255,255,255,0.02);
+}
+
+.tech-card--dim:hover {
+  opacity: 0.85;
+  border-color: var(--border2);
+}
+
+/* ── Ícones ── */
+.tech-card i {
+  font-size: 2.5rem;
+  display: block;
+  margin: 0 auto 10px;
+  position: relative;
+}
+
+.tech-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  position: relative;
+}
+
+.tech-name {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text);
+  position: relative;
+}
+
+.tech-desc {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 4px;
+  line-height: 1.4;
+  position: relative;
+}

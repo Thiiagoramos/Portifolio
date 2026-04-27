@@ -1,0 +1,32 @@
+/* =========================================
+   VARS.CSS — Design Tokens
+   ========================================= */
+:root {
+  /* Cores de fundo */
+  --bg:        #0d0f14;
+  --bg2:       #141720;
+  --bg3:       #1a1e2a;
+
+  /* Bordas */
+  --border:    #252a38;
+  --border2:   #2e3548;
+
+  /* Acento principal */
+  --cyan:      #00d9c0;
+  --cyan-dim:  #00d9c040;
+  --cyan-glow: #00d9c015;
+
+  /* Texto */
+  --text:      #c8d0e0;
+  --text-dim:  #6b7894;
+  --text-muted:#4a5268;
+
+  /* Status */
+  --green:     #3bdf7a;
+  --red:       #ff5f57;
+  --yellow:    #ffbd2e;
+
+  /* Tipografia */
+  --mono:      'JetBrains Mono', monospace;
+  --sans:      'Inter', sans-serif;
+}

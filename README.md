@@ -2,7 +2,7 @@
 
 Site de portfólio profissional com foco em **dados e engenharia de computação**, desenvolvido com HTML, CSS e JavaScript puro. Design inspirado em interfaces de terminal com tema escuro.
 
-🌐 **[thiiagoramos.github.io](https://thiiagoramos.github.io/Portifolio/)** 
+🌐 **[Portifólio](https://thiiagoramos.github.io/Portifolio/)** 
 
 ---
 

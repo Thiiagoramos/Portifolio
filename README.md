@@ -1,4 +1,4 @@
-# Thiago Ramos — Portfólio Pessoal
+# Thiago Ramos - Portfólio Pessoal
 
 Site de portfólio profissional com foco em **dados e engenharia de computação**, desenvolvido com HTML, CSS e JavaScript puro. Design inspirado em interfaces de terminal com tema escuro.
 
@@ -28,7 +28,7 @@ portfolio/
 ├── styles/
 │   ├── vars.css          # tokens de cor e tipografia
 │   ├── reset.css         # normalização base + scanlines
-│   ├── navbar.css        # barra de navegação fixa no topo
+│   ├── navbar.css        # barra de navegação
 │   ├── main.css          # layout base e componentes reutilizáveis
 │   ├── hero.css          # seção inicial
 │   ├── sobre.css         # bio, status, skills e ferramentas
@@ -61,7 +61,7 @@ const GITHUB_CONFIG = {
 };
 ```
 
-Os projetos são buscados automaticamente a cada carregamento da página. Para controlar o que aparece em cada card, use os **Topics** do repositório no GitHub — eles viram badges coloridos automaticamente.
+Os projetos são buscados automaticamente a cada carregamento da página. Para controlar o que aparece em cada card, use os **Topics** do repositório no GitHub - eles viram badges coloridos automaticamente.
 
 ### 2. Formulário de contato
 
@@ -121,13 +121,13 @@ A cada novo `git push`, o site é atualizado automaticamente.
 
 ## Tecnologias utilizadas
 
-- **HTML5** — estrutura semântica
-- **CSS3** — variáveis, grid, flexbox, animações e backdrop-filter
-- **JavaScript** — Fetch API, IntersectionObserver, manipulação do DOM
-- **GitHub API** — `api.github.com/users/:user/repos`
-- **Formspree** — processamento do formulário de contato
-- **JetBrains Mono** — tipografia principal (Google Fonts)
-- **Devicon** — ícones de tecnologias
+- **HTML5** - estrutura semântica
+- **CSS3** - variáveis, grid, flexbox, animações e backdrop-filter
+- **JavaScript** - Fetch API, IntersectionObserver, manipulação do DOM
+- **GitHub API** - `api.github.com/users/:user/repos`
+- **Formspree** - processamento do formulário de contato
+- **JetBrains Mono** - tipografia principal (Google Fonts)
+- **Devicon** - ícones de tecnologias
 
 ---
 

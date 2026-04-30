@@ -8,14 +8,14 @@ Site de portfólio profissional com foco em **dados e engenharia de computação
 
 ## Funcionalidades
 
-- **Navbar fixa** com scroll spy — destaca automaticamente a seção visível
+- **Navbar fixa** com scroll spy - destaca automaticamente a seção visível
 - **Efeito de digitação** no hero com rotação de papéis profissionais
-- **Projetos dinâmicos** via API pública do GitHub — sem atualização manual
+- **Projetos dinâmicos** via API pública do GitHub - sem atualização manual
 - **Skeleton loader** enquanto os projetos carregam
 - **Barras de habilidade animadas** separadas por categoria (dados vs. desenvolvimento)
-- **Tecnologias em grupos** — dados em destaque, desenvolvimento como complemento
+- **Tecnologias em grupos** - dados em destaque, desenvolvimento como complemento
 - **Formulário de contato** integrado ao Formspree
-- **Design responsivo** — adaptado para mobile, tablet e desktop
+- **Design responsivo** - adaptado para mobile, tablet e desktop
 - **Efeito scanlines** sutil no overlay para reforçar a estética terminal
 
 ---
